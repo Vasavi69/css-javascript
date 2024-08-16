@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        background-image: linear-gradient(to bottom,blue,purple);
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        height: 86vh;
+       }
+       .container{
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+       }
+       .main{
+        max-width: 400px;
+        width: 100%;
+        border:1px solid black;
+        border-radius: 20px;
+        padding: 60px 80px;
+        background-color: white;
+       }
+       .login-details{
+        margin-bottom: 20px;
+       }
+       .login-details label{
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+
+       }
+       .login-details input{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid;
+        border-radius: 5px;
+       }
+       .submit-button{
+        display: block;
+        width: 105%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: rgb(86,4,86);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        
+       }
+       .submit-button:hover{
+        background-color: #555;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <form action="" method="post">
+                <div class="login-details">
+                    <label for="User name">Enter Username:</label>
+                    <input type="text" id="User name" name="User name" placeholder="Enter user name">
+                </div>
+                <div class="login-details">
+                    <label for="password">Enter password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password">
+                </div>
+                <button type="submit" class="submit-button">SUBMIT</button>
+
+
+            </form>
+        </div>
+        
+        
+    </div>
+
+    
+</body>
+</html>

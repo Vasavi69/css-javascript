@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>enter your name:</label>
+    <input type="text" id="uname"><br/>
+    <button onclick="welcome()">hello</button>
+    <p id="p">this is a para</p>
+    <script>
+        function welcome()
+        {
+            var name=document.getElementById("uname").value;
+            document.getElementById("p").innerHTML= `<h1>welcome user ${name}</h1>`
+        }  -
+    </script>
+    
+    
+</body>
+</html>

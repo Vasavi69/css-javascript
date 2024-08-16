@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="cal()">
+        <input type="text" class="v1">
+        <input type="text" class="v2">
+        <input type="text" class="v3">
+        <input type="submit">
+    </form>
+    <script>
+        function cal()
+        {
+            var v1=parseInt(document.getElementsByClassName("v1").value);
+            var v2=parseInt(document.getElementsByClassName("v2").value);
+            var v3=parseInt(document.getElementsByClassName("v3").value);
+            if(v3==1)
+           {
+             document.write(v1+v2);
+           }
+           else if(v3==2)
+
+          {
+            document.write(v1-v2);
+
+          }
+          else if(v3==3)
+          {
+            document.write(v1*v2);
+          }
+          else if(v3==4)
+          {
+            document.write(v1/v2);
+          }
+          else
+          {
+            document.write(v1%v2);
+          }
+        }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student={
+            id:5,
+            branch:"csm",
+            name:"vasu",
+            writingExams:function()
+            {
+                console.log("writing Exams");
+            },
+            listeningClasses:function()
+            {
+                console.log("listening to the class")
+            }
+        }
+        console.table(student);
+        student.listeningClasses();
+        student.writingExams();
+        console.log( student.id+" "+student.name+" "+student.branch);
+        var rollno="id";
+        console.log(student[rollno]);
+    </script>
+       
+    
+</body>
+</html> 
